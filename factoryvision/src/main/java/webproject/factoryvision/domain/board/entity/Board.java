@@ -9,7 +9,6 @@ import webproject.factoryvision.global.entity.BaseEntity;
 
 @Entity
 @Getter
-@Setter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
