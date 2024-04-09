@@ -1,6 +1,5 @@
 package webproject.factoryvision.domain.alarm.entity;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.Entity;
 import jakarta.persistence.*;
 import jakarta.persistence.Id;
@@ -8,9 +7,10 @@ import lombok.*;
 import webproject.factoryvision.domain.user.entity.User;
 import webproject.factoryvision.global.entity.BaseEntity;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Getter
-@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -32,5 +32,12 @@ public class Alarm extends BaseEntity {
 
     @Column(name = "user_phone")
     private String phone;
+
+    public void savedAlarm(String userId, String name, String phone, LocalDateTime createdAt) {
+        this.userId = userId;
+        this.name = name;
+        this.phone = phone;
+        this.setCreatedAt(createdAt);
+    }
 
 }

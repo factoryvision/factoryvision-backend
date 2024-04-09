@@ -28,11 +28,7 @@ public class AlarmService {
             Alarm alarm = new Alarm();
             User user = userCallAlarm.get();
 
-            alarm.setUserId(user.getUserId());
-            alarm.setName(user.getName());
-            alarm.setPhone(user.getPhone());
-            alarm.setCreatedAt(LocalDateTime.now());
-
+            alarm.savedAlarm(user.getUserId(), user.getName(), user.getPhone(), LocalDateTime.now());
             alarmRepository.save(alarm);
         } else {
             throw new EntityNotFoundException("유저 아이디가 존재하지 않습니다.");
