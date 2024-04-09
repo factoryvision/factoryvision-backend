@@ -1,14 +1,12 @@
 package webproject.factoryvision.domain.board.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import webproject.factoryvision.domain.user.entity.User;
 import webproject.factoryvision.global.entity.BaseEntity;
 
 @Entity
+@Getter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
