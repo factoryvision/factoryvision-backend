@@ -10,7 +10,6 @@ import webproject.factoryvision.global.entity.BaseEntity;
 import java.time.LocalDateTime;
 
 @Entity
-@Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
