@@ -9,7 +9,6 @@ import webproject.factoryvision.domain.user.entity.User;
 import webproject.factoryvision.global.entity.BaseEntity;
 
 @Entity
-@Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
