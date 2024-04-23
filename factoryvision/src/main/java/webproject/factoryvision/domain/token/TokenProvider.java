@@ -46,7 +46,6 @@ public class TokenProvider {
     private Key key;
     private final SignatureAlgorithm signatureAlgorithm = SignatureAlgorithm.HS256;
 
-//    private final UserDetailsService userDetailsService;
     private final UserDetailsServiceImpl userDetailsServiceimpl;
     private final RedisDao redisDao;
 

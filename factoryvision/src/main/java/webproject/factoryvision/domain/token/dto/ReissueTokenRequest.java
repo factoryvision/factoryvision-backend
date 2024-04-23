@@ -8,8 +8,4 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PROTECTED, force = true)
 public class ReissueTokenRequest {
     private final String refreshToken;
-
-    public ReissueTokenRequest(String refreshToken) {
-        this.refreshToken = refreshToken;
-    }
 }

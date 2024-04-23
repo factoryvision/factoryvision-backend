@@ -29,7 +29,7 @@ public class SecurityConfig implements WebMvcConfigurer {
     }
 
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
-    private final String[] allowedUrls = {"/", "/swagger-ui/**", "/v3/**", "/factoryvision/login", "/factoryvision/signup", "/factoryvision/upload"};
+    private final String[] allowedUrls = {"/", "/swagger-ui/**", "/v3/**", "/factoryvision/login", "/factoryvision/signup"};
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {

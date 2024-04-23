@@ -11,8 +11,8 @@ import webproject.factoryvision.global.entity.BaseEntity;
 import java.io.Serializable;
 
 @Entity
-@Data
 @Builder
+@Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "users")
